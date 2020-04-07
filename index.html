@@ -1,147 +1,181 @@
 <html>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-@import url('https://fonts.googleapis.com/css?family=Oleo+Script&display=swap');
+    <head>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+        @import url('https://fonts.googleapis.com/css?family=Oleo+Script&display=swap');
+        
+        body{
+            margin:0px;
+            background-color: rgb(255, 220, 65);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .sticky {
+          position: fixed;
+          top: 0;
+          width: 100%
+        }
+        
+        
+        .heading{
+            padding: 0.1vw;
+            background-color: white;
+            font-family:  'Oleo Script', Helvetica, sans-serif;
+            font-weight: 100;
+            font-size: 6vh;
+            display: flex;
+            box-shadow: 0 4px 8px 0 rgba(221, 221, 221, 0.1), 0 6px 20px 0 rgba(165, 165, 165, 0.151);
+            justify-content: space-between;        
+        }
+        
+        .span_container{
+        display:flex;
+        }
+        
+        span{
+            align-self:center;
+            margin-left: 1vw;
+        }
+        
+        
+        
+        
+        
+        nav{
+        
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.5vw;
+        align-self: flex-end;
+        margin-left: auto;
+        padding-bottom: 0.1vw;
+        }
+        
+        .a{
+            color: black;
+            text-decoration: none;
+            padding-right: 3vw;
+            display: inline;
+            
+        }
+        
+        .a:hover{
+            color: FFCE00;
+        }
+        
+        
+        img {
+            box-sizing: border-box;
+            display: inline-block;
+            height: 97px;
+            align-self: center;
+            padding: 5px;
+        }
+        
+        .welcome{
+            margin-left:10vw;
+            margin-top: 5vw;
+            margin-bottom: -5px;
+            font-size: 50;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        
+        .subhead{
+            margin-left:10vw;
+            margin-top: 14vw;
+            margin-bottom: -5px;
+            font-size: 50;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        
+        
+        .panel{
+          margin-left:auto;
+          margin-right: auto;
+            background-color: rgba(255, 255, 255, 1);
+            width: 80vw;
+            box-shadow: 0 4px 8px 0 rgb(245, 200, 0), 0 6px 20px 0 rgba(255, 208, 0, 0.3);
+        
+        }
+        
+        .text{
+        
+         padding-top: 1vw;
+         padding-bottom: 1vw;
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2.5vh;
+           
+        }
+        
+        p{
+            margin: 1vh;
+        }
+        
+        .welcome_icon{
+            vertical-align: bottom;
+            margin-left: -2vw;
+        
+        }
+        
+        
+        .anchor{
+            padding-top: 5vw;
+            margin-bottom: 10vw;
+        }
+        
+        #last_subhead{
+        margin-bottom: 10vw;
+        }
+        
+        .sandwich__check{
+            display: none;
+        }
+        
+        @media (max-width: 768px){
+            nav{
+                display: none;
+                position: fixed;
+                left: 0;
+                top: 53px;  
+                width: 100%;
+                background: #fffffff8;
+                backdrop-filter: blur(4px);
+                padding: 20px 0;
+                font: 18px Arial;
+            }
+        
+            nav .a{
+                display: block;
+                text-align: right;
+                padding: 12px 0;
+                padding-right: 1.5em;
+            }
+        
+            .sandwich__check:checked ~ header>nav{
+                display: block;
+            }
+        }
+        
+        </style>
+    </head>
+        
 
-body{
-    margin:0px;
-    background-color: rgb(255, 220, 65);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%
-}
 
 
-.heading{
-    padding: 0.1vw;
-    background-color: white;
-    font-family:  'Oleo Script', Helvetica, sans-serif;
-    font-weight: 100;
-    font-size: 6vh;
-    display: flex;
-    box-shadow: 0 4px 8px 0 rgba(221, 221, 221, 0.1), 0 6px 20px 0 rgba(165, 165, 165, 0.151);
+<body>
 
-}
-
-.span_container{
-display:flex;
-}
-
-span{
-    align-self:center;
-    margin-left: 1vw;
-}
-
-
-
-
-
-nav{
-
-font-family: Arial, Helvetica, sans-serif;
-font-size: 1.5vw;
-align-self: flex-end;
-margin-left: auto;
-padding-bottom: 0.1vw;
-}
-
-.a{
-    color: black;
-    text-decoration: none;
-    padding-right: 3vw;
-    display: inline;
-    
-}
-
-.a:hover{
-    color: FFCE00;
-}
-
-
-img {
-    height: 12vw;
-    width: 12vw;
-    align-self: center;
-    padding: 5px;
-}
-
-.welcome{
-    margin-left:10vw;
-    margin-top: 5vw;
-    margin-bottom: -5px;
-    font-size: 50;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.subhead{
-    margin-left:10vw;
-    margin-top: 14vw;
-    margin-bottom: -5px;
-    font-size: 50;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-
-.panel{
-  margin-left:auto;
-  margin-right: auto;
-    background-color: rgba(255, 255, 255, 1);
-    width: 80vw;
-    box-shadow: 0 4px 8px 0 rgb(245, 200, 0), 0 6px 20px 0 rgba(255, 208, 0, 0.3);
-
-}
-
-.text{
-
- padding-top: 1vw;
- padding-bottom: 1vw;
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 2.5vh;
-   
-}
-
-p{
-    margin: 1vh;
-}
-
-.welcome_icon{
-    vertical-align: bottom;
-    margin-left: -2vw;
-
-}
-
-
-.anchor{
-    padding-top: 5vw;
-    margin-bottom: 10vw;
-}
-
-#last_subhead{
-margin-bottom: 10vw;
-}
-
-</style>
-
-
-
-
-
-
-
-
+<input type="checkbox" id="menuBtn" class="sandwich__check">
 
 <header id="myHeader" class="heading">
    
-    <img src="https://hosting.photobucket.com/images/i/fakefakefakeseriously/logo.png?width=285&height=175&fit=bounds&crop=fill"></img>
+    <div>
+  <!--  <img src="logo.png"></img>-->
     <div class="span_container">
     <span style="color: black">A+</span> 
     <span style="color:#FFCE00"> Duits</span>
+    </div>
     </div>
 
     <nav>
@@ -150,6 +184,8 @@ margin-bottom: 10vw;
         <div class="a" onclick="clickk(this)">Kontak ons</div>
         <div class="a" onclick="clickk(this)">Bespreek nou</div>
     </nav>
+
+    <label for="menuBtn" class="sandwich__btn">=</label>
 
 
 
@@ -243,6 +279,6 @@ function myFunction() {
 }
 </script>
 
-
+</body>
 
 </html>
